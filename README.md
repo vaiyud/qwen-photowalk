@@ -1,6 +1,9 @@
 # 📸 Qwen Photowalk: KL Heritage Gallery
 
-A live, immersive photo gallery website built during the **Qwen Photowalk** creative sprint in Kuala Lumpur. This project showcases original photography captured along the historic route of **Pasar Seni → Petaling Street → Bangunan Sultan Abdul Samad**, transformed into a cinematic, interactive web experience.
+🔗 **[Live Demo](https://chat.qwen.ai/s/deploy/t_ab4d351f-db3d-455f-b386-74d751194579)**
+
+
+A live immersive photo gallery website built during the **Qwen Photowalk** creative sprint in Kuala Lumpur. This project showcases original photography captured along the historic route of **Pasar Seni → Petaling Street → Bangunan Sultan Abdul Samad**, transformed into a interactive web experience.
 
 ## ✨ Features
 - **Responsive Mosaic Layout**: A fluid, CSS-column-based grid that adapts beautifully to mobile, tablet, and desktop screens.
@@ -13,6 +16,7 @@ A live, immersive photo gallery website built during the **Qwen Photowalk** crea
 
 ## 🛠️ Tech Stack
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript (ES6+)
+- **Development & Deployment**: Built and deployed seamlessly using the **Qwen Web Dev** feature.
 - **Libraries**: `exif-js` (metadata extraction), Font Awesome 6 (icons)
 - **Typography**: Google Fonts (`IM Fell English`, `Playfair Display`, `Cormorant Garamond`)
 - **Assets**: Direct Google Drive image hosting, HTML5 Canvas API
