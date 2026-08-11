@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qwen Photowalk</title>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/exif-js@2.3.0/exif.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="effectsCanvas"></canvas>
+
+  <header class="header">
+    <h1 class="title">QWEN PHOTOWALK</h1>
+    <p class="subheading">
+      Pasar Seni <span class="arrow">→</span> Petaling Street <span class="arrow">→</span> Bangunan Sultan Abdul Samad
+    </p>
+  </header>
+
+  <div class="status-bar" id="statusBar">
+    <span class="spinner"></span> Loading photos...
+  </div>
+
+  <main class="gallery" id="galleryView">
+    <div class="mosaic" id="mosaic"></div>
+  </main>
+
+  <div class="slideshow-container" id="slideshowView">
+    <div class="slideshow-wrapper" id="slideshowWrapper">
+      <button class="slideshow-play-btn" id="slideshowPlayBtn" aria-label="Play/Pause slideshow" title="Play/Pause">
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-pause"></i>
+      </button>
+      <button class="slideshow-close-btn" id="slideshowCloseBtn" aria-label="Close slideshow" title="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="slideshow-counter">
+        <span class="current-num" id="slideshowCurrentNum">1</span> / <span id="slideshowTotalNum">0</span>
+      </div>
+      <button class="slideshow-nav slideshow-prev" id="slideshowPrev" aria-label="Previous photo">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <div id="slideshowSlides"></div>
+      <button class="slideshow-nav slideshow-next" id="slideshowNext" aria-label="Next photo">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <div class="slideshow-tap-zone slideshow-tap-zone-left" id="tapZoneLeft"></div>
+      <div class="slideshow-tap-zone slideshow-tap-zone-right" id="tapZoneRight"></div>
+      <div class="slideshow-gradient"></div>
+      <div class="slideshow-info" id="slideshowInfo"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-divider"></div>
+
+    <div class="countdown-section">
+      <div class="countdown-title">Hari Merdeka · 31 August</div>
+      <div class="countdown-grid">
+        <div class="countdown-block">
+          <div class="countdown-value" id="cd-days">00</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-block">
+          <div class="countdown-value" id="cd-hours">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-block">
+          <div class="countdown-value" id="cd-minutes">00</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-block">
+          <div class="countdown-value" id="cd-seconds">00</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer-credits">
+      <span>Shot on <span class="device-name">Honor Magic8 Pro</span></span>
+      <span class="pipe">|</span>
+      <span>Powered by <span class="qwen-name">Qwen3.7-Plus</span></span>
+    </p>
+    <p class="footer-copyright">
+      © 2026 <span class="photographer-name">Vaishnavi Yudeyeljodi</span>. All rights reserved.
+    </p>
+  </footer>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i> BACK TO TOP
+  </button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
